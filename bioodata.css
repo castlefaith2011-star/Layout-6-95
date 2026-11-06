@@ -1,0 +1,134 @@
+body{
+    background-image: url(backgroumd.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    color: rgb(242, 231, 233);
+    background-color: #dd64ab;
+    text-align: center;
+}
+h2.m {background-color: #dd64ab;}
+h1{
+    color:aliceblue;
+    background-color:#fcff98;
+    text-shadow:15px 10px 10px #000;
+    text-align: center;
+}
+
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 12px ;
+    justify-content: center;
+    align-items: center;
+}
+
+div.konten{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-content: center ;
+    justify-content: center;
+    border: 3px solid pink;
+}
+
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+div.makanan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+img{
+    padding: 10px;
+}
+
+div.naspad{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: whitesmoke;
+}
+
+div.naspad:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+div.saltbreadbread{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: whitesmoke;
+}
+
+div.saltbread:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+div.igapenyet{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: whitesmoke;
+}
+
+div.igapenyet:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}

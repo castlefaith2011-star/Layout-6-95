@@ -1,0 +1,861 @@
+body{
+    background-image: url(backgroundtikk.jpg);;
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    background-color: #92c7db;
+    text-align: center;
+}
+
+h1{
+    color:aliceblue;
+    background-color: #e7ea9d;
+    text-shadow:15px 10px 10px #000;
+    text-align: center;
+}
+.m{background-color: rgb(234, 241, 201);}
+.n{background-color: rgb(234, 241, 201);
+    text-align: center;}
+.o{background-color: rgb(234, 241, 201);}
+.p{background-color: rgb(234, 241, 201);}
+
+    div.Biodata{
+    margin: 30px auto; 
+    width: 70%;
+    background-color: rgb(123, 122, 93);
+    color: white;
+    padding: 30px;
+    border-radius: 12px ;
+    justify-content: center;
+    align-items: center;
+}
+
+div.konten{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px ;
+
+}
+
+div.foto{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 22px;
+    cursor: pointer;
+    border: 4px solid rgb(249, 251, 151);
+}
+
+div.foto img{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    object-fit: cover;
+    object-position: center 35%;
+
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+div.makanan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+img{
+    padding: 10px;
+}
+
+div.sushi{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.sushi:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+div.saladwrap{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.saladwrap:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+div.marugameudon{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.marugameudon:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+div.pattymelt{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.pattymelt:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+div.steak{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.steak:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+
+div.minuman{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+img{
+    padding: 10px;
+}
+
+div.airputih{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.airputih:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+div.Bobamilktea{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.Bobamilktea:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+div.lemonade{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.lemonade:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+div.sweeticetea{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.sweeticetea:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+div.yakult{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: rgb(176, 217, 241);
+}
+
+div.yakult:hover{
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+.lagu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+
+.lagu > div {
+    position: relative;
+    width: 250px;
+    height: 310px;
+    flex-shrink: 0;
+    background: transparent;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+}
+
+
+.lagu > div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 0.5s ease;
+}
+
+.lagu > div img.top {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.lagu > div img.bottom {
+    opacity: 0;
+    z-index: 1;
+}
+
+.lagu > div:hover img.top {
+    opacity: 0;
+}
+
+
+.lagu > div:hover img.bottom {
+    opacity: 1;
+}
+
+
+.lagu > div p {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 250px;
+    min-height: 60px;
+    margin: 0;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    background-color: rgb(176, 217, 241);
+    border-radius: 0 0 15px 15px;
+    z-index: 3;
+}
+
+.lagu > div:hover {
+    transform: scale(1.05);
+}
+
+div.Keluarga {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+
+div.papa{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-content: center ;
+    justify-content: center;
+    border: 3px solid rgb(254, 255, 192);
+}
+
+div.papa img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.papa img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.papa:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.papa img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.papa:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.mama{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-content: center ;
+    justify-content: center;
+    border: 3px solid rgb(254, 255, 192);
+}
+
+div.mama img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.mama img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.mama:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.mama img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.mama:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+div.kakak{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-content: center ;
+    justify-content: center;
+    border: 3px solid rgb(254, 255, 192);
+}
+
+div.kakak img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.kakak img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.kakak:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.kakak img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.kakak:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.Adik1{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-content: center ;
+    justify-content: center;
+    border: 3px solid rgb(254, 255, 192);
+}
+
+div.Adik1 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.Adik1 img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.Adik1:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.Adik1 img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.Adik1:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.Adik2{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-content: center ;
+    justify-content: center;
+    border: 3px solid rgb(254, 255, 192);
+}
+
+div.Adik2 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.Adik2 img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.Adik2:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.Adik2 img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.Adik2:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.Keluarga {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.Keluarga > div {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 3px solid rgb(254, 255, 192);
+    background-color: rgb(176, 217, 241);
+    box-shadow: 0 4px 8px black;
+    overflow: hidden;
+}
+
+.Keluarga > div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    object-fit: cover;
+}
+
+.Keluarga > div img.top {
+    opacity: 1;
+    z-index: 2;
+}
+
+.Keluarga > div img.bottom {
+    opacity: 0;
+    z-index: 1;
+}
+
+.Keluarga > div:hover img.top {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.Keluarga > div:hover img.bottom {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.Keluarga > div p {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    background-color: rgb(176, 217, 241);
+    z-index: 3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color:rgb(181, 177, 208);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-family: ‘Gill Sans’, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: rgb(233, 30, 255);
+}
+
+h2, div[id] {
+  scroll-margin-top: 70px; 
+}
+
+body {
+  background-color: rgb(159, 159, 38);
+  background-image: url("bgbgbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "creator_genius";
+  text-align: center;
+}
+
+.headerr {
+    background-color: #ffd1dc;  
+    padding: 20px;
+    text-align: center;
+    color: #6b4c58;
+}
+
+.headerr-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.topnava {
+    overflow: hidden;
+    background-color: #b4e197;
+}
+
+.topnava a {
+    float: left;
+    display: block;
+    color: #2f4f2f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnava a:hover {
+    background-color: #93c47d;  
+    color: #ffffff;
+}
+ 
+.top-bar {
+    background-color: #fff2cc; 
+    overflow: hidden;
+    border-bottom: 1px solid #e2d9c2;
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: 10px;
+    width: 350px;
+    margin-bottom: 6px;
+    margin-left: 440px;
+    text-align: center;
+    font-size: 20pt;
+    background-color: #f392b6cc;
+    text-shadow: 2px 3px 5px rgb(222, 176, 201);
+    border-radius: 20px;
+    padding: 10px;
+    border: dotted;
+    border-color: aliceblue;
+}
+
+h4 {
+    font-weight: bold;
+    margin-top: 10px;
+    width: 350px;
+    margin-bottom: 6px;
+    margin-left: 450px;
+    text-align: center;
+    font-size: 20pt;
+    background-color: #75c4e9b7;
+    text-shadow: 2px 3px 5px lightsteelblue;
+    border-radius: 20px;
+    padding: 10px;
+    border: dotted;
+    border-color: aliceblue;
+    
+}
+h5 {
+    font-weight: bold;
+    margin-top: 10px;
+    width: 350px;
+    margin-bottom: 6px;
+    margin-left: 450px;
+    text-align: center;
+    font-size: 20pt;
+    background-color: #ffda33c9;
+    text-shadow: 2px 3px 5px rgb(212, 178, 103);
+    border-radius: 20px;
+    padding: 10px;
+    border: dotted;
+    border-color: aliceblue;
+}
+h8{
+  color: rgba(7, 24, 80, 0);
+  background-color: rgba(255, 179, 218, 0);
+  padding: 30px;
+  text-align: center;
+}
+
+.buah {
+    background-color: #ffabd1; 
+    padding: 10px;
+    text-align: left;
+}
+
+.buah ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.buah li {
+    background-color: #ffeb85e7; 
+    padding: 6px 12px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease, background-color 0.2s ease;
+}
+
+.buah li:hover {
+    background-color: rgba(206, 128, 255, 0.575);
+}
+
+.lorem {
+    background-color: #abddef; 
+    padding: 10px;
+    text-align: left;
+}
+
+.lorem ul {
+    padding-left: 20px;
+}
+
+.lorem li {
+    background-color: #ffb7b2;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+    list-style-type: square;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.lorem li:hover {
+    background-color: #fff38a; 
+    transform: scale(1.01);    
+}
+
+.icon {
+    background-color: #fff47d; 
+    padding: 10px;
+    text-align: left;
+}
+
+.icon ul {
+    padding-left: 20px;
+}
+
+.icon li {
+    background-color: #97e2ff;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    list-style-type: square;
+    cursor: pointer;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.icon li i {
+    margin-right: 6px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.icon li:hover {
+    background-color: #ff9db5; 
+    padding-left: 18px;       
+}
+
+.icon li:hover i {
+    transform: rotate(15deg) scale(1.25); 
+}
+
+table.numbers {
+    border-collapse: collapse;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+}
+
+
+td.even {
+    background-color: rgb(255, 193, 218);
+    color: rgb(0, 0, 0);
+}
+
+td.odd {
+    background-color: rgb(97, 50, 173);
+    color: rgb(255, 255, 255);
+}
+
+td.odd:hover {
+    background-color: rgb(147, 219, 241);
+    color:#0c355e;
+}
+
+td.even:hover {
+    background-color: rgb(255, 247, 179);
+    color:#5a410a;
+}
