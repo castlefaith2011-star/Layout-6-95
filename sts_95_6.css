@@ -1,0 +1,472 @@
+@font-face {
+    font-family: "kerisdipa";
+    src: url(Kerisdipa\ TTF\ Demo.ttf);
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "mandalika";
+    src: url(Mandalika\ Indonesia\ TTF\ Personal.ttf);
+}
+
+@font-face {
+    font-family: "balinese";
+    src: url(JerukBaliDemoRegular.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #f8f1e5;
+    font-family: "poppins";
+    color: #571414;
+}
+
+.header-banner {
+    width: 100%;
+    text-align: center;
+}
+
+.header-banner img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+}
+
+h4 {
+    text-align: center;
+    font-family: "kerisdipa";
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+h4:hover {
+  text-align: center;
+  padding: 10px;
+  transform: scale(1.1);
+  background-color: rgba(255, 217, 176, 0.877);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+    text-align: center;
+    font-family: "poppins";
+}
+h3:hover {
+  text-align: center;
+  padding: 10px;
+  transform: scale(1.1);
+  background-color: rgba(220, 242, 255, 0.785);
+
+}
+.image-hover {
+    position: relative;
+    width: 400px;
+    height: 380px;
+    overflow: hidden;
+    border: 4px solid #571414;
+    border-radius: 20px;
+}
+
+.image-hover img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+.img1 {
+    opacity: 1;
+}
+
+.img2 {
+    opacity: 0;
+}
+
+.image-hover:hover .img1 {
+    opacity: 0;
+}
+
+.image-hover:hover .img2 {
+    opacity: 1;
+}
+.intro {
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;;
+}
+
+.intro-text {
+    width: 55%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px #c9b9a4;
+}
+
+.intro-text h2 {
+    font-family: "mandalika";
+    font-size: 32px;
+}
+
+/* .intro-text p {
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+
+.judul-map {
+    width: 90%;
+    margin: 30px auto 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.judul-map h2 {
+    font-family: "mandalika";
+    font-size: 55px;
+    color: #571414;
+    margin: 0;
+    padding: 12px 80px;
+    border: 4px solid #571414;
+    border-radius: 60px;
+    background-color: #f8d9ad;
+    white-space: nowrap;
+}
+.judul-map h2:hover {
+    padding: 12px 80px;
+    border: 4px solid #571414;
+    border-radius: 60px;
+    background-color: #f8add6d3;
+    white-space: nowrap;
+    transform: scale(1.1);
+}
+
+.judul-map span {
+    font-size: 38px;
+}
+.judul-map span:hover {
+    font-size: 38px;
+    white-space: nowrap;
+    transform: scale(1.1);
+}
+
+.petunjuk {
+    text-align: center;
+    font-size: 20px;
+    color: #571414;
+    margin-bottom: 35px;
+}
+
+.map-section {
+    width: 95%;
+    margin: 30px auto 80px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    font-family: "poppins";
+}
+
+.map {
+    width: 58%;
+    position: relative;
+}
+
+.map img {
+    width: 100%;
+    display: block;
+}
+
+.titik {
+    position: absolute;
+    width: auto;
+    min-width: 35px;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 15%;
+    background-color: white;
+    border: 2px solid #571414;
+    color: #571414;
+    font-family: "poppins";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.titik:hover {
+    transform: scale(1.15);
+    background-color: #571414;
+    color: white;
+}
+
+.jembrana {
+    left: 27%;
+    top: 30%;
+}
+
+.buleleng {
+    left: 42%;
+    top: 23%;
+}
+
+.tabanan {
+    left: 44%;
+    top: 42%;
+}
+
+.badung {
+    left: 52%;
+    top: 55%;
+}
+
+.bangli {
+    left: 60%;
+    top: 23%;
+}
+
+.gianyar {
+    left: 57%;
+    top: 40%;
+}
+
+.klungkung {
+    left: 70%;
+    top: 70%;
+}
+
+.karangasem {
+    left: 74%;
+    top: 34%;
+}
+
+.denpasar {
+    left: 56%;
+    top: 67%;
+}
+
+.info-daerah {
+    width: 42%;
+}
+
+.info {
+    display: none;
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px #c9b9a4;
+}
+
+.info:target {
+    display: block;
+}
+
+.info h2 {
+    font-family: "balinese";
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.info h3 {
+    text-align: left;
+}
+
+.info img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.video-button {
+    display: block;
+    width: 220px;
+    margin: 25px auto 5px;
+    padding: 14px 20px;
+    background-color: #571414;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.video-button:hover {
+    background-color: #8a2929;
+    transform: scale(1.05);
+}
+
+.judul-kartu {
+    width: 100%;
+    height: 170px;
+    margin-top: 100px;
+    background-image: url("budaya balii.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.judul-kartu h2 {
+    margin: 0;
+    text-align: center;
+    font-family: "mandalika";
+    font-size: 55px;
+    color: #571414;
+    text-shadow: 0 6px 15px rgba(241, 203, 121, 0.5);
+    transition: 0.3s ease;
+}
+
+.judul-kartu h2:hover {
+    transform: scale(1.1);
+    text-shadow: 0 6px 15px #f1cb79;
+}
+
+.kartu {
+    width: 90%;
+    margin: 30px auto 80px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px #c9b9a4;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    text-align: center;
+    font-family: "mandalika";
+    font-size: 22px;
+}
+
+.trihitakarana {
+    width: 85%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #571414d2;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.trihitakarana h2 {
+    font-family: "mandalika";
+    font-size: 38px;
+}
+
+.tiga {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tiga div {
+    background-color: white;
+    color: #571414;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    margin: 5px;
+}
+
+.tiga div:hover{
+  text-align: center;
+  padding: 10px;
+  transform: scale(1.1);
+  background-color: rgb(255, 251, 220);
+}
+
+.kesimpulan {
+    width: 80%;
+    margin: 70px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #c9b9a4;
+}
+
+.kesimpulan h2 {
+    text-align: center;
+    font-family: "mandalika";
+    font-size: 40px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-foto,
+    .intro-text {
+        width: 90%;
+    }
+
+    .map-section {
+        flex-direction: column;
+    }
+
+    .map,
+    .info-daerah {
+        width: 90%;
+        margin: auto;
+    }
+
+    .judul-map h2 {
+        font-size: 35px;
+        padding: 12px 30px;
+    }
+
+    .judul-map span {
+        font-size: 25px;
+    }
+
+    .petunjuk {
+        font-size: 16px;
+    }
+
+    .tiga {
+        flex-direction: column;
+    }
+
+    .tiga div {
+        width: 80%;
+        margin: auto;
+    }
+
+}
