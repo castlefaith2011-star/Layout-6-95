@@ -3,6 +3,7 @@
 }
 body{
     margin: 0;
+    background-color: #f8f1e5;
 }
 .header{
     background-color: rgb(202, 233, 223);
@@ -30,6 +31,18 @@ body{
     padding: 10px;
     text-align: center;
 }
+
+.header-banner {
+    width: 100%;
+    text-align: center;
+}
+
+.header-banner img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+}
+
 /* stlye pada table*/
 table,th,td{
     border:1px solid black;
